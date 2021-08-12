@@ -1,6 +1,9 @@
 // import logo from './logo.svg';
-import Profile from './components/profile';
+import Profile from './components/Profile';
 import user from './user.json';
+
+import Statistics from './components/Statistics';
+import statisticalData from './statistical-data.json';
 
 function App() {
   return (
@@ -14,6 +17,8 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <Statistics title="Upload stats" stats={statisticalData} />;
+      {/* <Statistics stats={statisticalData} />; */}
     </div>
   );
 }
