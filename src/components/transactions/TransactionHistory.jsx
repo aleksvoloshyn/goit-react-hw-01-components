@@ -18,7 +18,7 @@ const TransactionHistory = ({ items }) => {
     //   </tbody>
     // </table>
     <Table striped bordered hover>
-      <thead>
+      <thead style={{ backgroundColor: 'salmon' }}>
         <tr>
           <th>Type</th>
           <th>amount</th>
