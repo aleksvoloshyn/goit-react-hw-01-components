@@ -11,9 +11,11 @@ import FriendList from './components/friendslist/FriendList';
 import transactions from './components/transactions/transactions.json';
 import TransactionHistory from './components/transactions/TransactionHistory';
 
+import styles from './app.module.css';
+
 function App() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Profile
         name={user.name}
         tag={user.tag}

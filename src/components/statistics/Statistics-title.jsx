@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
+import styles from './statistics.module.css';
 
 const StatisticsTitle = ({ title }) => {
-  return <h2 class="title">{title}</h2>;
+  return (
+    <div className={styles.titleSection}>
+      <h2 className={styles.title}>{title}</h2>
+    </div>
+  );
 };
 
 StatisticsTitle.propTypes = {

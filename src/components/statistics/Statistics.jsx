@@ -1,9 +1,10 @@
 import StatisticsTitle from './Statistics-title';
 import StatList from './StatList';
+import styles from './statistics.module.css';
 
 const Statistics = ({ stats, title }) => {
   return (
-    <section class="statistics">
+    <section className={styles.statistics}>
       <StatisticsTitle title={title} />
       <StatList stats={stats} />
     </section>

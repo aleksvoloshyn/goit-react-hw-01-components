@@ -1,13 +1,14 @@
 import PropTypes from 'prop-types';
+import styles from './statistics.module.css';
 
 const StatList = ({ stats }) => {
   return (
-    <ul class="stat-list">
+    <ul className={styles.statisticList}>
       {stats.map(data => {
         return (
-          <li class="item" key={data.id}>
-            <span class="label">{data.label}</span>
-            <span class="percentage"> {data.percentage}% </span>
+          <li className={styles.item} key={data.id}>
+            <span className={styles.label}>{data.label}</span>
+            <span className={styles.percentage}> {data.percentage}% </span>
           </li>
         );
       })}

@@ -1,0 +1,39 @@
+.isOnline {
+  content: ' \25CF';
+  width: 12px;
+  height: 12px;
+  background-color: springgreen;
+  border: 1px solid springgreen;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.isOffline {
+  background-color: tomato;
+  border: 1px solid tomato;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 12px;
+  /* border: 1px solid silver; */
+  padding: 12px;
+  border-radius: 5%;
+  box-shadow: 4px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.avatar {
+  margin-right: 30px;
+}
