@@ -1,6 +1,6 @@
 import StatisticsTitle from './Statistics-title';
 import StatList from './StatList';
-import styles from './statistics.module.css';
+import styles from './Statistics.module.css';
 
 const Statistics = ({ stats, title }) => {
   return (

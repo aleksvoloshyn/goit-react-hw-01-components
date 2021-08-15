@@ -1,17 +1,17 @@
 // import logo from './logo.svg';
-import Profile from './components/profile/Profile';
-import user from './components/profile/user.json';
+import Profile from './components/Profile/Profile';
+import user from './data/user.json';
 
-import Statistics from './components/statistics/Statistics';
-import statisticalData from './components/statistics/statistical-data.json';
+import Statistics from './components/Statistics/Statistics';
+import statisticalData from './data/statistical-data.json';
 
-import friends from './components/friendslist/friends.json';
-import FriendList from './components/friendslist/FriendList';
+import friends from './data/friends.json';
+import FriendList from './components/Friendslist/FriendList';
 
-import transactions from './components/transactions/transactions.json';
-import TransactionHistory from './components/transactions/TransactionHistory';
+import transactions from './data/transactions.json';
+import TransactionHistory from './components/Transactions/TransactionHistory';
 
-import styles from './app.module.css';
+import styles from './App.module.css';
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
         likes={user.stats.likes}
       />
       <Statistics title="Upload stats" stats={statisticalData} />
-      <FriendList friends={friends} />,
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
